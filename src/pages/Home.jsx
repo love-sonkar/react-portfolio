@@ -1,7 +1,7 @@
 import React from "react";
 import { ContainerCenter, Container, Button } from "../components/utility";
-import Profile from "/images/profile.png";
-import Profile2 from "/images/profile2.png";
+import Profile from "/images/profile.webp";
+import Profile2 from "/images/profile2.webp";
 
 const Home = () => {
   return (
