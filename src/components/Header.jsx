@@ -19,7 +19,7 @@ const Header = () => {
     <div className=" border-baseColor border-b-2">
       <div className="p-3 flex text-primary items-center justify-between max-w-7xl  mx-auto ">
         <Link to="/">
-          <h2 className="text-2xl ">Love Sonkar</h2>
+          <h2 className="text-3xl ">Love Sonkar</h2>
         </Link>
         <ul className="md:flex gap-3 hidden ">
           {LinkItem.map((item, index) => {
@@ -34,17 +34,20 @@ const Header = () => {
             );
           })}
         </ul>
-        <Link className="md:hidden block text-2xl" onClick={handleMenu}>
+        <Link
+          className="md:hidden block text-4xl select-none"
+          onClick={handleMenu}
+        >
           {menubar ? <GrFormClose /> : <HiMenuAlt3 />}
         </Link>
 
         <div
           className={`${
-            menubar ? "w-full" : "w-0"
-          } overflow-hidden fixed -z-10 drop-shadow-md inset-0 md:hidden transition-all duration-300 `}
+            menubar ? "opacity-100" : "opacity-0"
+          } overflow-hidden fixed  drop-shadow-md inset-0 md:hidden transition-opacity delay-50 z-10`}
           onClick={handleMenu}
         >
-          <ul className="flex flex-col gap-4 items-center justify-center h-full bg-baseColor  w-3/4">
+          <ul className="flex flex-col gap-4 items-center justify-center h-full bg-baseColor  w-3/4 ">
             {LinkItem.map((item, index) => {
               return (
                 <Link
