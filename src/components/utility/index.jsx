@@ -20,7 +20,7 @@ export const Button = ({ children, basecolor, className, link }) => {
         basecolor
           ? "bg-baseColor hover:text-baseColor border-baseColor"
           : "bg-white border-white hover:text-white"
-      }  text-2xl rounded-md  px-8 border-2 py-1  hover:bg-transparent transition-all max-w-fit`}
+      }  text-2xl rounded-md  px-8 border-2 py-1  hover:bg-transparent transition-colors max-w-fit`}
     >
       {children}
     </Link>

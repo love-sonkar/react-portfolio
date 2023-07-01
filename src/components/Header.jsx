@@ -43,8 +43,8 @@ const Header = () => {
 
         <div
           className={`${
-            menubar ? "opacity-100" : "opacity-0"
-          } overflow-hidden fixed  drop-shadow-md inset-0 md:hidden transition-opacity delay-50 z-10`}
+            menubar ? "w-full" : "w-0"
+          } overflow-hidden fixed  drop-shadow-md inset-0 md:hidden transition-all delay-50 z-10`}
           onClick={handleMenu}
         >
           <ul className="flex flex-col gap-4 items-center justify-center h-full bg-baseColor  w-3/4 ">
