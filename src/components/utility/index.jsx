@@ -8,8 +8,18 @@ export const Container = ({ children, className }) => {
   return <div className={`${className} max-w-7xl mx-auto`}>{children}</div>;
 };
 
-export const Divider = () => {
-  return <div className="border-b bg-baseColor h-1 w-full my-8" />;
+export const Divider = ({ className }) => {
+  return (
+    <div className={`${className} border-b bg-baseColor h-1 w-full my-8`} />
+  );
+};
+
+export const IconWrapper = ({ children }) => {
+  return (
+    <Link className="text-xl rounded-full p-2 border-black border-2 hover:border-baseColor hover:scale-90 transition-transform hover:text-baseColor">
+      {children}
+    </Link>
+  );
 };
 
 export const Button = ({ children, basecolor, className, link }) => {
@@ -24,5 +34,15 @@ export const Button = ({ children, basecolor, className, link }) => {
     >
       {children}
     </Link>
+  );
+};
+
+export const Heading = ({ children, className }) => {
+  return (
+    <h2
+      className={`${className} animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-2xl font-black`}
+    >
+      &lt;{children}&gt;
+    </h2>
   );
 };

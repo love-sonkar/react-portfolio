@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-slate-100 md:h-screen h-auto">
+    <div className="bg-slate-100  h-auto">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

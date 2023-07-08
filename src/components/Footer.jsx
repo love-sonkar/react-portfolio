@@ -1,6 +1,6 @@
 import React from "react";
 import FooterContact from "./FooterContact";
-import { Container, ContainerCenter, Divider } from "./utility";
+import { Container, ContainerCenter, Divider, IconWrapper } from "./utility";
 import { BsGithub } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
 import { Link } from "react-router-dom";
@@ -13,12 +13,12 @@ const Footer = () => {
         <div>
           <h1 className="text-2xl pb-3">Connect With Me</h1>
           <ContainerCenter className="items-center gap-2">
-            <Link className="text-xl rounded-full p-2 border-black border-2 hover:border-baseColor hover:scale-90 transition-transform hover:text-baseColor">
+            <IconWrapper>
               <ImLinkedin />
-            </Link>
-            <Link className="text-xl rounded-full p-2 border-black border-2 hover:border-baseColor hover:scale-90 transition-transform hover:text-baseColor">
+            </IconWrapper>
+            <IconWrapper>
               <BsGithub />
-            </Link>
+            </IconWrapper>
           </ContainerCenter>
         </div>
         <div className="">
