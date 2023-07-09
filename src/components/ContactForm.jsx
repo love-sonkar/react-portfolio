@@ -1,11 +1,14 @@
 import React from "react";
 import Input from "./Input";
-import { Button, Error } from "./utility";
+import { Error } from "./utility";
+import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
+  const navigate = useNavigate();
   const schema = z.object({
     name: z.string().min(3, { message: "Minimun 3 charecter required" }),
     lastname: z.string().min(3, { message: "Minimum 3 charecter required" }),
@@ -21,8 +24,9 @@ const ContactForm = () => {
   } = useForm({ resolver: zodResolver(schema) });
 
   const submit = (data) => {
-    console.log(data);
+    toast.success("Massage Send Successfully!");
     reset();
+    navigate("/");
   };
 
   return (
@@ -57,7 +61,10 @@ const ContactForm = () => {
           {errors?.query && <Error>{errors?.query?.message}</Error>}
         </div>
         <div>
-          <button className="bg-baseColor hover:text-baseColor border-baseColor text-2xl rounded-md  px-8 border-2 py-1  hover:bg-transparent transition-colors text-white  text-center w-full">
+          <button
+            formNoValidate
+            className="bg-baseColor hover:text-baseColor border-baseColor text-2xl rounded-md  px-8 border-2 py-1  hover:bg-transparent transition-colors text-white  text-center w-full"
+          >
             Send
           </button>
         </div>

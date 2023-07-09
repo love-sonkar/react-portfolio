@@ -3,7 +3,6 @@ import FooterContact from "./FooterContact";
 import { Container, ContainerCenter, Divider, IconWrapper } from "./utility";
 import { BsGithub } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (

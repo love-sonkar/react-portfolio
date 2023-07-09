@@ -5,10 +5,12 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <div className="bg-slate-100  h-auto">
+      <Toaster />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
