@@ -11,9 +11,9 @@ const Skills = () => {
   };
 
   return (
-    <div className="px-4 ">
+    <div className="px-4 mt-6">
       <Heading className="text-center ">My Skills</Heading>
-      <div className="flex h-full items-center justify-center">
+      <div className="flex h-full items-center justify-center py-3">
         <div className="bg-baseColor w-1 h-[389px]" />
         <div className="flex flex-col gap-3 h-full justify-between">
           <SkillList
@@ -21,21 +21,21 @@ const Skills = () => {
             w="w-[60vw]"
             icon={<BiLogoHtml5 style={iconStyle} />}
             heading="Html & Css"
-            content="Html css learing"
+            content="2 Years Of Experience"
           />
           <SkillList
             level="intermideate"
             w="w-[40vw]"
             icon={<BiLogoJavascript style={iconStyle} />}
             heading="Javascript"
-            content="javascript js "
+            content="1 years Of Experience "
           />
           <SkillList
             level="intermideate"
             w="w-[20vw]"
             icon={<BiLogoReact style={iconStyle} />}
             heading="React js"
-            content="react js "
+            content="6 Mont's Of Experiance "
           />
         </div>
       </div>

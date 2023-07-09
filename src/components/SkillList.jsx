@@ -10,8 +10,8 @@ const SkillList = ({ w, icon, heading, content, level }) => {
       </div>
       <div className="h-auto flex flex-col items-center">
         {icon}
-        <h1>{heading}</h1>
-        <p>{content}</p>
+        <h1 className="text-center">{heading}</h1>
+        <p className="text-center">{content}</p>
       </div>
     </div>
   );
