@@ -14,23 +14,37 @@ export const Divider = ({ className }) => {
   );
 };
 
-export const IconWrapper = ({ children }) => {
+export const IconWrapper = ({ children, link }) => {
   return (
-    <Link className="text-xl rounded-full p-2 border-black border-2 hover:border-baseColor hover:scale-90 transition-transform hover:text-baseColor">
+    <Link
+      target="_blank"
+      to={link ?? "/"}
+      className="text-xl rounded-full p-2 border-black border-2 hover:border-baseColor hover:scale-90 transition-transform hover:text-baseColor"
+    >
       {children}
     </Link>
   );
 };
 
-export const Button = ({ children, basecolor, className, link }) => {
+export const Button = ({
+  children,
+  basecolor,
+  className,
+  link,
+  w,
+  ...props
+}) => {
   return (
     <Link
+      {...props}
       to={link}
       className={`${className} ${
         basecolor
           ? "bg-baseColor hover:text-baseColor border-baseColor"
           : "bg-white border-white hover:text-white"
-      }  text-2xl rounded-md  px-8 border-2 py-1  hover:bg-transparent transition-colors max-w-fit`}
+      }  text-2xl rounded-md  px-8 border-2 py-1  hover:bg-transparent transition-colors ${
+        w ? w : "max-w-fit"
+      } block text-center`}
     >
       {children}
     </Link>
@@ -45,4 +59,8 @@ export const Heading = ({ children, className }) => {
       &lt;{children}&gt;
     </h2>
   );
+};
+
+export const Error = ({ children }) => {
+  return <p className="text-baseColor p-1 text-base text-center">{children}</p>;
 };

@@ -7,16 +7,16 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <Container className="gap-8 p-4 flex-wrap flex-1">
+    <Container className=" p-4">
       <FooterContact />
       <ContainerCenter className="justify-start md:justify-evenly  flex-wrap gap-5">
         <div>
           <h1 className="text-2xl pb-3">Connect With Me</h1>
           <ContainerCenter className="items-center gap-2">
-            <IconWrapper>
+            <IconWrapper link="https://www.linkedin.com/in/love-sonkar">
               <ImLinkedin />
             </IconWrapper>
-            <IconWrapper>
+            <IconWrapper link="https://github.com/love-sonkar">
               <BsGithub />
             </IconWrapper>
           </ContainerCenter>
