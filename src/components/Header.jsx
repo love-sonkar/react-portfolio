@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { HiMenuAlt3 } from "react-icons/Hi";
-import { GrFormClose } from "react-icons/Gr";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { GrFormClose } from "react-icons/gr";
 
 const Header = () => {
   const [menubar, setMenubar] = useState(false);
