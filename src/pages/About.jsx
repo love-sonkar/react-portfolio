@@ -1,7 +1,13 @@
 import React from "react";
+import AboutSection from "../components/AboutSection";
+import { Container } from "../components/utility";
 
 const About = () => {
-  return <div>About</div>;
+  return (
+    <Container>
+      <AboutSection />
+    </Container>
+  );
 };
 
 export default About;

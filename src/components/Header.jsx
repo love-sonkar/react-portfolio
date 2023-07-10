@@ -16,7 +16,7 @@ const Header = () => {
     setMenubar((prev) => !prev);
   };
   return (
-    <div className=" border-baseColor border-b-2 sticky top-0 z-20 bg-slate-100">
+    <div className=" border-baseColor border-b-2 sticky top-0 z-20 bg-slate-100 w-full">
       <div className="p-3 flex text-primary items-center justify-between max-w-7xl  mx-auto ">
         <Link to="/">
           <h2 className="text-3xl ">Love Sonkar</h2>

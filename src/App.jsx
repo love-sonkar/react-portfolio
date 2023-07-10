@@ -6,10 +6,11 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function App() {
   return (
-    <div className="bg-slate-100  h-auto ">
+    <div className="bg-slate-100  h-screen flex flex-col items-center justify-between">
       <Toaster />
       <Header />
       <Routes>
