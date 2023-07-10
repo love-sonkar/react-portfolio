@@ -30,7 +30,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="shadow-lg rounded-md p-4 flex-1 w-64 ">
+    <div className="shadow-lg rounded-md p-4 flex-1 w-72 ">
       <h2 className="py-2 text-xl text-baseColor text-center">
         Feel Free To Message
       </h2>
