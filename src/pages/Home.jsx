@@ -7,11 +7,13 @@ import { Container } from "../components/utility";
 const Home = () => {
   return (
     <Container>
-      <HeroSectionContainer
-        title="Hii i'm"
-        name="Love Sonkar"
-        image={ImageProfile}
-      />
+      <div className="py-8">
+        <HeroSectionContainer
+          title="Hii i'm"
+          name="Love Sonkar"
+          image={ImageProfile}
+        />
+      </div>
       <Skills />
     </Container>
   );

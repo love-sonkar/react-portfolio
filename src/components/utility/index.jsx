@@ -42,7 +42,7 @@ export const Button = ({
         basecolor
           ? "bg-baseColor hover:text-baseColor border-baseColor"
           : "bg-white border-white hover:text-white"
-      }  text-2xl rounded-md  px-8 border-2 py-1  hover:bg-transparent transition-colors ${
+      }  text-2xl rounded-md  px-8 border-2 py-1  hover:bg-transparent transition-colors duration-300 ease-in ${
         w ? w : "max-w-fit"
       } block text-center`}
     >

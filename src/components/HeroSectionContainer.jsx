@@ -9,6 +9,7 @@ const HeroSectionContainer = ({
   title,
   buttontext,
   name,
+  left,
 }) => {
   return (
     <div className="flex flex-col-reverse md:flex-row flex-wrap gap-5 p-4">
@@ -29,7 +30,13 @@ const HeroSectionContainer = ({
         </div>
       </ContainerCenter>
       <ContainerCenter className="flex-1 justify-center relative pt-6">
-        <div className="bg-baseColor h-72 w-72 border-3 p-4 rounded-br-[250px] rounded-tr-3xl rounded-bl-3xl rounded-tl-[250px]">
+        <div
+          className={`bg-baseColor h-72 w-72 p-4 ${
+            left
+              ? "rounded-br-3xl rounded-tr-[250px] rounded-bl-[250px] rounded-tl-3xl"
+              : "rounded-br-[250px] rounded-tr-3xl rounded-bl-3xl rounded-tl-[250px]"
+          }`}
+        >
           <LazyLoadImage
             src={image}
             effect="blur"
