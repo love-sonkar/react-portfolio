@@ -6,7 +6,7 @@ import { ImLinkedin } from "react-icons/im";
 
 const Footer = () => {
   return (
-    <Container className=" p-4">
+    <Container className="w-full p-4">
       <FooterContact />
       <ContainerCenter className="justify-start md:justify-evenly  flex-wrap gap-5">
         <div>

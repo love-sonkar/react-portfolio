@@ -27,11 +27,11 @@ const HeroSectionContainer = ({
           <Button
             basecolor
             className="text-white"
-            link="/assets/resume.pdf"
             target="_blank"
             download="/assets/resume.pdf"
+            link="/assets/resume.pdf"
           >
-            {buttontext ?? "Hire Me"}
+            Download CV
           </Button>
         </div>
       </ContainerCenter>

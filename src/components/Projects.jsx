@@ -15,9 +15,9 @@ const Projects = ({ item }) => {
       <div className="flex-1 cursor-pointer border-b-2 border-baseColor">
         <LazyLoadImage
           src={image}
-          className="rounded-lg object-cover hover:object-contain aspect-video"
+          className="rounded-lg object-cover"
           effect="blur"
-          alt="title"
+          alt={image}
           placeholderSrc="/images/dummy.png"
         />
       </div>

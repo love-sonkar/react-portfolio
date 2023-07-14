@@ -3,7 +3,7 @@ import HeroSectionContainer from "../components/HeroSectionContainer";
 import Skills from "../components/Skills";
 import ImageProfile from "/images/profile.webp";
 import { Container } from "../components/utility";
-
+import LatestProductSection from "../components/LatestProductSection";
 const Home = () => {
   return (
     <Container>
@@ -12,10 +12,10 @@ const Home = () => {
           title="Hii i'm"
           name="Love Sonkar"
           image={ImageProfile}
-          buttontext="Download CV"
         />
       </div>
       <Skills />
+      <LatestProductSection />
     </Container>
   );
 };

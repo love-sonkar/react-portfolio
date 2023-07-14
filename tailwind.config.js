@@ -5,9 +5,6 @@ export default {
     extend: {
       colors: {
         baseColor: "#E94560",
-        primary: "#0F3460",
-        yup: "#0F3460",
-        primaryBlack: "#16213E",
       },
       keyframes: {
         typing: {
