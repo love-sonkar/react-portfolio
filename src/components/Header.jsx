@@ -8,7 +8,6 @@ const Header = () => {
 
   const LinkItem = [
     { link: "/", name: "Home" },
-    { link: "/portfolio", name: "Portfolio" },
     { link: "/about", name: "About" },
     { link: "/contact", name: "Contact" },
   ];

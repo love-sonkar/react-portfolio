@@ -24,7 +24,13 @@ const HeroSectionContainer = ({
             {paragraph ??
               "Building & Maintaining responsive websites. Exploring new Webdesigns. Converting Figma design into HTML Code."}
           </p>
-          <Button basecolor className="text-white" link="/contact">
+          <Button
+            basecolor
+            className="text-white"
+            link="/assets/resume.pdf"
+            target="_blank"
+            download="/assets/resume.pdf"
+          >
             {buttontext ?? "Hire Me"}
           </Button>
         </div>

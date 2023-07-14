@@ -12,6 +12,7 @@ const Home = () => {
           title="Hii i'm"
           name="Love Sonkar"
           image={ImageProfile}
+          buttontext="Download CV"
         />
       </div>
       <Skills />
