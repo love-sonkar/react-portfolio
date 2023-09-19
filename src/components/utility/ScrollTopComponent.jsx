@@ -1,9 +1,13 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 const ScrollTopComponent = () => {
   const location = useLocation();
   useEffect(() => {
-    return window.scroll(0, 0);
+    return window.scroll({
+      left:0,
+      top:0,
+      behavior:"smooth"
+    });
   }, [location]);
 };
 

@@ -5,7 +5,6 @@ import { GrFormClose } from "react-icons/gr";
 
 const Header = () => {
   const [menubar, setMenubar] = useState(false);
-
   const LinkItem = [
     { link: "/", name: "Home" },
     { link: "/about", name: "About" },
@@ -16,15 +15,15 @@ const Header = () => {
   };
   return (
     <div className=" border-baseColor border-b-2 sticky top-0 z-20 bg-slate-100 w-full">
-      <div className="p-3 flex text-primary items-center justify-between max-w-7xl  mx-auto ">
+      <div className="p-3 flex text-primary items-center justify-between max-w-7xl  mx-auto">
         <Link to="/">
           <h2 className="text-3xl ">Love Sonkar</h2>
         </Link>
-        <ul className="md:flex gap-3 hidden ">
+        <ul className="md:flex gap-3 hidden">
           {LinkItem.map((item, index) => {
             return (
               <Link
-                className="text-base md:text-xl "
+                className="text-base md:text-xl relative pb-1 overflow-hidden"
                 key={index}
                 to={item.link}
               >

@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <div className="px-4 mt-6">
       <Heading className="text-center ">My Skills</Heading>
-      <div className="flex h-full items-center justify-center py-3">
+      <div className="flex items-center justify-center py-3">
         <div className="bg-baseColor w-1 h-[389px]" />
         <div className="flex flex-col gap-3 h-full justify-between">
           <SkillList

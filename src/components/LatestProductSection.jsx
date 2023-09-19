@@ -9,11 +9,7 @@ const LatestProductSection = () => {
 
   useEffect(() => {
     setLatest(() => {
-      return ProjectData.filter((item) => {
-        if (item.latest) {
-          return item;
-        }
-      });
+      return ProjectData.filter((item) => (item.latest ? item : ""));
     });
   }, []);
 

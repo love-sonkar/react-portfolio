@@ -5,10 +5,13 @@ import { BsGithub } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
 
 const Footer = () => {
+  const d = new Date();
+  let year = d.getFullYear();
+
   return (
     <Container className="w-full p-4">
       <FooterContact />
-      <ContainerCenter className="justify-start md:justify-evenly  flex-wrap gap-5">
+      <div className="items-start flex-col flex gap-5">
         <div>
           <h1 className="text-2xl pb-3">Connect With Me</h1>
           <ContainerCenter className="items-center gap-2">
@@ -23,17 +26,14 @@ const Footer = () => {
         <div className="">
           <h1 className="text-2xl ">Contact Us</h1>
           <p className="text-xl">
-            Phone : <span className="text-gray-500">+91 8461862742</span>
-          </p>
-          <p className="text-xl">
             Email : <span className="text-gray-500">loveboss806@gmail.com</span>
           </p>
         </div>
-      </ContainerCenter>
+      </div>
       <Divider />
       <ContainerCenter className="justify-center ">
         <p className="md:text-2xl text-xl text-primary">
-          &copy; 2023 Love Sonkar. All Rights Reserved
+          &copy; {year} Love Sonkar. All Rights Reserved
         </p>
       </ContainerCenter>
     </Container>
