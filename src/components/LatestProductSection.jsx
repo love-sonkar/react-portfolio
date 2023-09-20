@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { ContextHookUse } from "../hook/useContext";
 import LatestProduct from "./LatestProduct";
 import { Container, ContainerCenter, Heading } from "./utility";
-import { ProjectData } from "./utility/ProjectData";
 
 const LatestProductSection = () => {
   const [latest, setLatest] = useState();
+  const {data} = ContextHookUse();
 
   useEffect(() => {
     setLatest(() => {
-      return ProjectData.filter((item) => (item.latest ? item : ""));
+      return data.filter((item) => (item.latest ? item : ""));
     });
   }, []);
 

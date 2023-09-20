@@ -1,4 +1,3 @@
-import React from "react";
 const SkillList = ({ w, icon, heading, content, level }) => {
   return (
     <div className="flex items-center">

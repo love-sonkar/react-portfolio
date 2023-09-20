@@ -14,6 +14,8 @@ const Projects = ({ item }) => {
     >
       <div className="flex-1 cursor-pointer border-b-2 border-baseColor">
         <LazyLoadImage
+          height="100%"
+          width="100%"
           src={image}
           className="rounded-lg object-cover"
           effect="blur"

@@ -3,9 +3,10 @@ import Profile2 from "/images/profile2.webp";
 import HeroSectionContainer from "./HeroSectionContainer";
 import { Container, Heading } from "./utility";
 import Projects from "./Projects";
-import { ProjectData } from "./utility/ProjectData";
+import { ContextHookUse } from "../hook/useContext";
 
 const AboutSection = () => {
+  const {data} = ContextHookUse()
   return (
     <Container className="py-4">
       <Heading className="text-center">About Me</Heading>
@@ -21,8 +22,7 @@ const AboutSection = () => {
       </div>
       <div className="p-4">
         <Heading className="text-center mb-10">My Projects</Heading>
-
-        {ProjectData.map((item) => {
+        {data.map((item) => {
           return <Projects key={item.id} item={item} image={item.image} />;
         })}
       </div>

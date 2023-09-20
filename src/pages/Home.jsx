@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSectionContainer from "../components/HeroSectionContainer";
 import Skills from "../components/Skills";
 import ImageProfile from "/images/profile.webp";
