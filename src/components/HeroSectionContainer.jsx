@@ -11,7 +11,7 @@ const HeroSectionContainer = ({
   left,
 }) => {
   return (
-    <div className="flex flex-col-reverse md:flex-row flex-wrap gap-5 p-4">
+    <section className="flex flex-col-reverse md:flex-row flex-wrap gap-5 p-4">
       <ContainerCenter className="flex-1 justify-center pt-6 md:p-0 ">
         <div className="max-auto gap-2 flex flex-col">
           {title && <h2 className="text-6xl ">{title}</h2>}
@@ -50,7 +50,7 @@ const HeroSectionContainer = ({
           />
         </div>
       </ContainerCenter>
-    </div>
+    </section>
   );
 };
 
