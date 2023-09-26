@@ -15,7 +15,7 @@ function App() {
       <Toaster />
       <ScrollTopComponent />
       <Header />
-    <div className="bg-slate-100  h-screen flex flex-col items-center justify-between ">
+    <div className="bg-slate-100 flex flex-col items-center justify-between ">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

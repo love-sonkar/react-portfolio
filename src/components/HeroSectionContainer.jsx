@@ -10,9 +10,6 @@ const HeroSectionContainer = ({
   name,
   left,
 }) => {
-
-  
-
   return (
     <div className="flex flex-col-reverse md:flex-row flex-wrap gap-5 p-4">
       <ContainerCenter className="flex-1 justify-center pt-6 md:p-0 ">
@@ -30,7 +27,7 @@ const HeroSectionContainer = ({
             basecolor
             className="text-white"
             target="_blank"
-          download="/assets/resume.pdf"
+            download="/assets/resume.pdf"
             link="/assets/resume.pdf"
           >
             Download CV
