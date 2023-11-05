@@ -7,12 +7,14 @@ import ScrollTopComponent from "./components/utility/ScrollTopComponent";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import ScrollTopButton from "./components/ScrollTopButton";
 
 function App() {
   return (
     <>
       <Toaster />
       <ScrollTopComponent />
+      <ScrollTopButton />
       <Header />
       <section className="bg-slate-100 flex flex-col items-center justify-between ">
         <Routes>

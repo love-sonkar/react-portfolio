@@ -17,21 +17,18 @@ const Skills = () => {
         <div className="bg-baseColor w-1 h-[389px]" />
         <div className="flex flex-col gap-3 h-full justify-between">
           <SkillList
-            level="Expert"
             w="w-[60vw]"
             icon={<BiLogoHtml5 style={iconStyle} />}
             heading="Html & Css"
             content="2 Years Of Experience"
           />
           <SkillList
-            level="intermideate"
             w="w-[40vw]"
             icon={<BiLogoJavascript style={iconStyle} />}
             heading="Javascript"
             content="1 years Of Experience "
           />
           <SkillList
-            level="intermideate"
             w="w-[20vw]"
             icon={<BiLogoReact style={iconStyle} />}
             heading="React js"

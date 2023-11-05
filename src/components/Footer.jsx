@@ -23,7 +23,7 @@ const Footer = () => {
             </IconWrapper>
           </ContainerCenter>
         </div>
-        <div className="">
+        <div>
           <h1 className="text-2xl ">Contact Us</h1>
           <p className="text-xl">
             Email : <span className="text-gray-500">loveboss806@gmail.com</span>

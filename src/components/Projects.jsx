@@ -12,7 +12,7 @@ const Projects = ({ item }) => {
         reverse && "md:flex-row-reverse"
       }`}
     >
-      <div className="flex-1 cursor-pointer border-b-2 border-baseColor">
+      <div className="flex-1 border-b-2 border-baseColor">
         <LazyLoadImage
           src={image}
           className="rounded-lg object-cover"
