@@ -26,13 +26,13 @@ const Skills = () => {
             w="w-[40vw]"
             icon={<BiLogoJavascript style={iconStyle} />}
             heading="Javascript"
-            content="1 years Of Experience "
+            content="1 Years Of Experiance  "
           />
           <SkillList
             w="w-[20vw]"
             icon={<BiLogoReact style={iconStyle} />}
             heading="React js"
-            content="6 Mont's Of Experiance "
+            content="1 Years Of Experiance "
           />
         </div>
       </div>
