@@ -3,6 +3,7 @@ import FooterContact from "./FooterContact";
 import { Container, ContainerCenter, Divider, IconWrapper } from "./utility";
 import { BsGithub } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
+import {FaXTwitter} from 'react-icons/fa6'
 
 const Footer = () => {
   const d = new Date();
@@ -20,6 +21,9 @@ const Footer = () => {
             </IconWrapper>
             <IconWrapper link="https://github.com/love-sonkar">
               <BsGithub />
+            </IconWrapper>
+            <IconWrapper link="https://twitter.com/lovesonkar_">
+              <FaXTwitter />
             </IconWrapper>
           </ContainerCenter>
         </div>
