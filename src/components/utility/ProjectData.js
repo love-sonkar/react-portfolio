@@ -21,7 +21,7 @@ export const ProjectData = [
     link: "https://love-sonkar.github.io/tictactoe/",
     image: "/images/tictactoe.webp",
     reverse: false,
-    latest: true,
+    latest: false,
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const ProjectData = [
     link: "https://love-sonkar.github.io/microsoft-webclone/",
     image: "/images/microsoft.webp",
     reverse: true,
-    latest: false,
+    latest: true,
   },
   {
     id: 5,

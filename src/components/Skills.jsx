@@ -26,7 +26,7 @@ const Skills = () => {
             w="w-[40vw]"
             icon={<BiLogoJavascript style={iconStyle} />}
             heading="Javascript"
-            content="1 Years Of Experiance  "
+            content="1.5 Years Of Experiance  "
           />
           <SkillList
             w="w-[20vw]"
