@@ -1,4 +1,4 @@
-const SkillList = ({ w, icon, heading, content, level }) => {
+const SkillList = ({ w, icon, heading }) => {
   return (
     <div className="flex items-center">
       <div>
@@ -7,7 +7,6 @@ const SkillList = ({ w, icon, heading, content, level }) => {
       <div className="h-auto flex flex-col items-center">
         {icon}
         <h1 className="text-center">{heading}</h1>
-        <p className="text-center">{content}</p>
       </div>
     </div>
   );

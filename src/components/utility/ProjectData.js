@@ -1,5 +1,13 @@
 export const ProjectData = [
   {
+    id: 0,
+    title: "Blog App",
+    link: "https://full-stack-blogapp.vercel.app/login",
+    image: "/images/blog.png",
+    reverse: true,
+    latest: true,
+  },
+    {
     id: 1,
     title: "Amazon Clone",
     link: "https://amazon-clone-swart-ten.vercel.app/",
@@ -29,7 +37,7 @@ export const ProjectData = [
     link: "https://love-sonkar.github.io/microsoft-webclone/",
     image: "/images/microsoft.webp",
     reverse: true,
-    latest: true,
+    latest: false,
   },
   {
     id: 5,

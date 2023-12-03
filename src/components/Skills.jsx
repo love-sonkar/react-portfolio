@@ -14,25 +14,22 @@ const Skills = () => {
     <div className="px-4 mt-6">
       <Heading className="text-center ">My Skills</Heading>
       <div className="flex items-center justify-center py-3">
-        <div className="bg-baseColor w-1 h-[389px]" />
+        <div className="bg-baseColor w-1 h-[325px]" />
         <div className="flex flex-col gap-3 h-full justify-between">
           <SkillList
             w="w-[60vw]"
             icon={<BiLogoHtml5 style={iconStyle} />}
             heading="Html & Css"
-            content="2 Years Of Experience"
           />
           <SkillList
             w="w-[40vw]"
             icon={<BiLogoJavascript style={iconStyle} />}
             heading="Javascript"
-            content="1.5 Years Of Experiance  "
           />
           <SkillList
             w="w-[20vw]"
             icon={<BiLogoReact style={iconStyle} />}
             heading="React js"
-            content="1 Years Of Experiance "
           />
         </div>
       </div>
