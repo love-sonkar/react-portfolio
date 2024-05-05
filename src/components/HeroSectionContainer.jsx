@@ -17,7 +17,7 @@ const HeroSectionContainer = ({
           {title && <h2 className="text-6xl ">{title}</h2>}
           {name && <h3 className="md:text-4xl text-2xl ">{name}</h3>}
           <h3 className="md:text-5xl text-3xl max-w-min animate-typing overflow-hidden whitespace-nowrap pr-5 border-r-4 border-r-baseColor text-baseColor">
-            {typewriterText ?? "Frontend Devloper."}
+            {typewriterText ?? "Frontend Developer."}
           </h3>
           <p className="text-xl ">
             {paragraph ??
